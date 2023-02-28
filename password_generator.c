@@ -3,6 +3,7 @@
 #include <stdlib.h>
 int password_generator(length)
 {
+//could be generated from file or dataset
     char list[] = "1234567890qwertyuiopasdfghjklzxcvbnm!@#$%^&*()_- +=QWERTYUIOPASDFGHJKLZXCVBNM[]{};':\<>,.?/\|";
     printf("\t");
     for (int j = 0; j < length; j++)
@@ -16,6 +17,7 @@ int password_generator(length)
     {
         printf("%c", list[rand() % (sizeof list - 1)]);
     }
+    //fix
     printf("\n");
     printf("\t");
     for (int x = 0; x < length; x++)
